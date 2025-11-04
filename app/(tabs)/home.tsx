@@ -47,7 +47,10 @@ export default function HomeScreen() {
           source={require('../../assets/images/perfil.png')} 
           style={styles.profileImage}
         />
+        <TouchableOpacity onPress={() => router.push('/editperfil')}>
         <Text style={styles.editProfile}>Editar Perfil</Text>
+</TouchableOpacity>
+
       </View>
 
       {/* Texto */}
